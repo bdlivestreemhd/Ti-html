@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijoy TV | RS SPORTS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            animation: backgroundChange 10s infinite alternate;
+            color: white;
+        }
+        .iframe-container {
+            width: 100%;
+            height: 500px; /* আগের মতো সাইজ রাখা হয়েছে */
+            overflow: hidden;
+            position: relative;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: -154px; /* আগের মতো টপ পজিশন রাখা হয়েছে */
+            left: 0;
+            clip-path: inset(0 0 123px 0); /* আগের মতো ক্রপিং করা হয়েছে */
+            pointer-events: auto; /* ক্লিক করা যাবে, কিন্তু স্ক্রল হবে না */
+            overflow: hidden;
+        }
+        .description {
+            position: absolute;
+            top: 232px;
+            left: 20px;
+            font-size: 30px; /* সুন্দর ফন্ট সাইজ */
+            font-family: 'Roboto', sans-serif; /* উন্নত ফন্ট */
+            font-weight: 600;
+            color: yellow;
+            z-index: 10;
+        }
+        @keyframes backgroundChange {
+            0% {
+                background-color: #000;
+            }
+            50% {
+                background-color: #333;
+            }
+            100% {
+                background-color: #111;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Description -->
+<div class="description">
+    RS LIVE | ʟɪᴠᴇ ꜱᴛʀᴇᴀᴍ ᴘʟᴀʏᴇʀ
+</div>
+
+<!-- Embed Only Video Player -->
+<div class="iframe-container">
+    <iframe src="https://fredflix.fun/play.php?id=67e8dc2ae804a" allowfullscreen scrolling="no"></iframe>
+</div>
+
+</body>
+      </html>
